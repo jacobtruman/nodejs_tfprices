@@ -1,0 +1,12 @@
+{
+  "name": "tfprices",
+  "version": "0.0.1",
+  "description": "Get backpack.tf prices",
+  "main": "tfprices.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "Jacob Truman",
+  "license": "BSD"
+}
