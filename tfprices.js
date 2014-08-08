@@ -68,7 +68,11 @@ p.getItemPrice = function(item_id, callback) {
 			_this.item = _this.priceList.prices[item_id];
 			_this.name = _this.item.item_info.item_name;
 			_this.currency = _this.item[6][0].current.currency;
-			_this.price = _this.item[6][0].current.value;
+			if(_this.item[6][0].current.value_high) {
+				_this.price = _this.item[6][0].current.value_high;
+			} else {
+				_this.price = _this.item[6][0].current.value;
+			}
 			
 			//console.log(_this.name);
 			//console.log(_this.price+" "+_this.currency);
